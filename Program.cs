@@ -1,41 +1,68 @@
 ﻿using System;
 class  Program
 {
-    static int Calculate(int a){//Cevre sahesi
-        int p = 3;
-        return a * p*p;
-    }
-    static int Calculate(int a, int b){//duzbucaqli sahesi
-        return a*b;
-    }
-    static int Calculate(int a, int b,int c){// para sahe
-        return 2 *(a*b+ a*c + b*c);
-    }
-     static int Calculate(int a,int b,int c,int r){
-        int perimetr = (a+b+c)/2;
-        return perimetr * r;
-    }
-  
-  static int pow(int x){
-    return x*x;
-}
-static int pow(int x,int c){
-    int result = 1;
-   for(int i = 0; i<c;i++){
-    result *= x;
+      static string customSubstring(string sentence, int startIndex, int lastIndex){
+        string result = "";
 
-   }
-   return result;
-}
-  static void Main(){
-    Console.WriteLine("Cevrenin Sahesi " + Calculate(5));
-    Console.WriteLine("Duzbucaqli sahesi " + Calculate(5,3));
-    Console.WriteLine("Para sahesi " + Calculate(5,3,4));
-    Console.WriteLine("Ucbucaqlinin  daxiline cekilmis cevre " + Calculate(3,4,5,6));
-    Console.WriteLine("1ci hesab "+ pow(3));
-    Console.WriteLine("2ci hesab "+ pow(5,3));
-}
-}
+       for(int i = startIndex; i<startIndex + lastIndex;i++){//3 deyisen
+        if(i<sentence.Length){
+
+        result +=sentence[i];
+        }
+       
+      
+       }
+        return result;
+
+       }
+          static string customSubstring(string sentence, int startIndex){///2 deyisen
+        string result = "";
+
+       for(int i = startIndex; i<sentence.Length ;i++){
+        result +=sentence[i];
+
+       }
+       return result;
+       }
+
+       //task-1 bitis
 
 
 
+
+
+
+
+
+
+      static bool customContains(string sentence, string word){
+        for(int i = 0;i<sentence.Length;i++){
+            for(int j=0;j<word.Length;j++){
+                if(i+j>=sentence.Length){
+                    return false;
+                }
+                if(sentence[i+j]==word[j]||sentence[i+j]+32==word[j]||sentence[i+j]-32==word[j]){//ai dan komek aldigimi hisse i+j ucun
+                    if(j==word.Length-1){
+                        return true;
+                    }
+                }
+            }
+           
+        }
+         return false;
+      }
+
+      // task 2 bitis
+       
+        static void Main(){
+    Console.WriteLine(customSubstring("Hello, World!",2,10)); //1 task run
+    Console.WriteLine(customContains("Hello, World!","world"));
+}
+    }
+
+
+
+
+
+
+///467//do

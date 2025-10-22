@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/inqilab/MyApp/MyApp.csproj": {}
+    "/Users/inqilab/Desktop/MyApp/MyApp.csproj": {}
   },
   "projects": {
-    "/Users/inqilab/MyApp/MyApp.csproj": {
+    "/Users/inqilab/Desktop/MyApp/MyApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/inqilab/MyApp/MyApp.csproj",
+        "projectUniqueName": "/Users/inqilab/Desktop/MyApp/MyApp.csproj",
         "projectName": "MyApp",
-        "projectPath": "/Users/inqilab/MyApp/MyApp.csproj",
+        "projectPath": "/Users/inqilab/Desktop/MyApp/MyApp.csproj",
         "packagesPath": "/Users/inqilab/.nuget/packages/",
-        "outputPath": "/Users/inqilab/MyApp/obj/",
+        "outputPath": "/Users/inqilab/Desktop/MyApp/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/inqilab/.nuget/NuGet/NuGet.Config"
